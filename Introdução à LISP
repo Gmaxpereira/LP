@@ -44,6 +44,16 @@
 (compara 15 35)
 (compara 40 40)
       
+(defun idade_adequada (idade)
+  (cond ((and (> idade 0) (< idade 18)) (format t "~%Menor de Idade!"))
+        ((and (>= idade 18) (< idade 65)) (format t "~%Idade Adequada!"))
+        ((>= idade 65) (format t "~%Idoso!"))
+        (t (format t "~%Idade Invalida!"))))
+        
+(idade_adequada 10)
+(idade_adequada 30)
+(idade_adequada 70)
+(idade_adequada -3)
       
       
       
