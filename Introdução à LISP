@@ -1,0 +1,54 @@
+(terpri)
+(write "Hello,World")
+(terpri)
+
+(defvar x 1)
+(format t "O resultado da expressao eh: ~d" (+ 5 (* 2 3)))
+(setq x 50)
+(terpri)
+(write x)
+
+(defvar variavel 2)
+(setq variavel (- (+ 10 5) (/ 50 2)))
+(terpri)
+(write variavel)
+
+(defvar outra 3)
+(setq outra (+ 5 (* 3 (/ 4 10))))
+(terpri)
+(write outra)
+(terpri)
+(write "ou")
+(format t"~% O Resultado de outra eh: ~f" outra)
+
+
+(defun incrementaX (y)
+  (+ x y))
+  
+(defun soma (x y)
+  (+ x y))
+  
+(format t "~%~d"(soma 20 20))
+(setq x (incrementaX 20))
+(format t "~% x=~d" x)
+
+(defun compara (num1 num2)
+  (if (> num1 num2)
+      (format t "~%~d eh maior que ~d" num1 num2)
+      (if (= num1 num2)
+      (format t "~%~d eh igual a ~d"num1 num2)
+      (format t "~%~d eh maior que ~d" num2 num1)
+       )))
+      
+(compara 20 10)
+(compara 15 35)
+(compara 40 40)
+      
+      
+      
+      
+      
+      
+      
+      
+      
