@@ -40,4 +40,15 @@
       (+ (car L) (soma (cdr L)))))
 (format t "~% O resultado da soma eh: ~D" (soma '(1 2 3 4 5)))
 
+(terpri)
+
+(defun maior (L)
+  (cond 
+      ((null L) 0)
+      (t (setq m (maior (cdr L)))
+         (if (> (car L) m)
+              (car L)
+               m))))
+(format t "~% O maior elemento eh: ~D" (maior '(10 4 50 2 5)))
+
 
